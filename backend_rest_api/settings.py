@@ -127,3 +127,9 @@ REST_FRAMEWORK = {
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+STATICFILES_DIRS=(
+    ("js", os.path.join(STATIC_ROOT, 'js')),
+    ("css", os.path.join(STATIC_ROOT, 'css')),
+    ("images", os.path.join(STATIC_ROOT, 'images')),
+    ("fonts", os.path.join(STATIC_ROOT, 'fonts')),
+)
